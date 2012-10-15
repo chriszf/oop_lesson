@@ -1,3 +1,5 @@
+#!/usr/bin/env python2.6
+
 import pyglet
 from pyglet.window import key
 from core import GameElement
@@ -156,6 +158,7 @@ class Board(object):
         # Draw the label if it exists:
         if self.message:
             self.message.draw()
+
         # Draw the content layer
         for y in range(self.height):
             for x in range(self.width):
@@ -219,8 +222,11 @@ def run():
 
     try:
         handler = game.keyboard_handler
-        pyglet.clock.schedule_interval((lambda dt: handler), 1/10.0)
+        def handler_wrapper(dt):
+            handler()
+        pyglet.clock.schedule_interval(handler_wrapper, 1/10.0)
     except AttributeError:
+        print "No keyboard handler"
         pass
         
     # Set up the update clock
