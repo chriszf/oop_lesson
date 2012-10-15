@@ -218,7 +218,8 @@ def run():
     game_window.push_handlers(key_handler)
 
     try:
-        pyglet.clock.schedule_interval((lambda dt: game.keyboard_handler()), 1/10.0)
+        handler = game.keyboard_handler
+        pyglet.clock.schedule_interval((lambda dt: handler), 1/10.0)
     except AttributeError:
         pass
         
