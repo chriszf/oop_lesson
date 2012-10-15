@@ -63,8 +63,8 @@ Let's look at how to add a couple more boulders to the game. Each rock needs to 
 
         print "The first rock is at", (rock1.x, rock1.y)
         print "The second rock is at", (rock2.x, rock2.y)
-        print "Rock 1 image": rock1.IMAGE
-        print "Rock 2 image": rock2.IMAGE
+        print "Rock 1 image", rock1.IMAGE
+        print "Rock 2 image", rock2.IMAGE
 
 Try adding more rocks and playing around with placement. See what happens when you try to place a rock outside the bounds of the game grid.
 
