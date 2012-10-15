@@ -4,7 +4,7 @@ This game only runs in python2.6 with the default pyglet install. To run the gam
 
     python2.6 engine.py
 
-After every step, run and experiment with the program to see how each addition changes it.
+We'll be editing **only** the code in game.py. After every step, run and experiment with the program to see how each addition changes it.
 
 Step 1: Let's add something to the game.
 ----------------------------------------
