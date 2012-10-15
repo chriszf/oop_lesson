@@ -101,7 +101,7 @@ class Board(object):
         pass
 
     def erase_msg(self):
-        self.message.text = None
+        self.message.text = ""
         pass
 
     def draw_bg(self, sprite, x_pos, y_pos):
