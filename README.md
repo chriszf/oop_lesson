@@ -386,7 +386,7 @@ Next, we need a way for our player to 'interact' with an object. In fact, we wan
     # Add after this line
 
     if existing_el:
-        existing_el.interact(player)
+        existing_el.interact(PLAYER)
 
 Now, whenever the player tries to bump into an object, it will try to interact with our character first. The default behavior for interaction is to do nothing. This is defined on the GameElement class. We want to override the behavior when a player interacts with a Gem. We want that gem to be added to the player's inventory. It will take the following format:
 
