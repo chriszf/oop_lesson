@@ -1,8 +1,11 @@
 Object Oriented Programming
 ===========================
-This game only runs in python2.6 with the default pyglet install. To run the game, execute it as follows:
+This game requires python2.6 or greater and pyglet 1.2alpha, as of the time of writing.
 
-    python2.6 engine.py
+This tutorial walks you through building a game using [Danc's Miraculously Flexible Game Prototyping Graphics for Small Worlds](http://www.lostgarden.com/2009/03/dancs-miraculously-flexible-game.html). We've built a (relatively brittle) game engine on top of the [Pyglet game library](http://www.pyglet.org/), a small OpenGL-based game library for python.
+
+Here's a small sample of what the output looks like when you're done.
+![Screenshot](http://robotocracy.com/img/game_sample.png)
 
 We'll be editing **only** the code in game.py. After every step, run and experiment with the program to see how each addition changes it.
 
@@ -440,3 +443,6 @@ Here's a list of all the sprites (game images) that the game engine understands.
     Princess
 
 Mostly, be clever with this and have fun! Classes, woo.
+
+### Licensing
+The material presented here is copyrighted by Hackbright Academy, and is part of our fellowship program curriculum. It is currently free for personal use.
